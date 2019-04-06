@@ -1,15 +1,17 @@
 @extends('layout.app')
 @section('content')
 <header>
-   
+    @include('assets.navbar')
 </header>
-   
-    
-@include('assets.couresels')
+<div class="container">
 
+    @include('assets.couresels')
+
+
+    
 
    <footer>
        @include('assets.footer')
    </footer>
-    
+</div>
 @endsection

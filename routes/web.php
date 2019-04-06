@@ -16,3 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard','UsersController@index');
+
+Route::get('/dashboard2','UsersController@index2');
+
+Route::get('/dashboard3','UsersController@index3');
+
+Route::get('/cart','CartController@index');
+Route::get('/laptop','LaptopController@index');
+Route::get('/accessories','AccessoriesController@index');
+Route::get('/items','OthersController@index');

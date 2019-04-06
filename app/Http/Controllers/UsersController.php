@@ -16,6 +16,16 @@ class UsersController extends Controller
         return view ('Users.dashboard');
     }
 
+    public function index2()
+    {
+        return view ('Users.dashboard2');
+    }
+
+    public function index3()
+    {
+        return view ('Users.dashboard3');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

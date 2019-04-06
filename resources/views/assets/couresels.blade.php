@@ -11,9 +11,8 @@
       
         <div class="container">
           <div class="carousel-caption">
-            <h1>PNK'S COMPUTERS</h1>
-          {{--   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>    text-left --}}
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Go Shopping</a></p>
+            <h1>ALL'S TECHNOLOGIES</h1>        
+            <p><a class="btn btn-lg btn-primary" href="{{url('dashboard2')}}" role="button">Go Shopping</a></p>
           </div>
         </div>
       </div>
@@ -21,9 +20,8 @@
          <img src="{{asset('images/2.jpg')}}" class="d-block w-100 image_css" alt="">
         <div class="container">
           <div class="carousel-caption">
-            <h1>PNK'S COMPUTERS</h1>
-          {{--   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> --}}
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Go Shopping</a></p>
+            <h1>ALL'S TECHNOLOGIES</h1>       
+          <p><a class="btn btn-lg btn-primary" href="{{url('dashboard2')}}" role="button">Go Shopping</a></p>
           </div>
         </div>
       </div>
@@ -31,9 +29,8 @@
           <img src="{{asset('images/3.jpg')}}" class="d-block w-100 image_css" alt="">
         <div class="container">
           <div class="carousel-caption">
-            <h1>PNK'S COMPUTERS</h1>
-          {{--   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> --}}
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Go Shopping</a></p>
+            <h1>ALL'S TECHNOLOGIES</h1>         
+            <p><a class="btn btn-lg btn-primary" href="{{url('dashboard2')}}" role="button">Go Shopping</a></p>
           </div>
         </div>
       </div>
