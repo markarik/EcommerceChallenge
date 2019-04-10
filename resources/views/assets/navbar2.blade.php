@@ -7,39 +7,24 @@
 
         <div class="collapse navbar-collapse" id="avored-navbar">
             <ul class="main-navbar navbar-nav mr-auto">
-                <li class="nav-item">        
-            <a class="nav-link navbar2_class" href="https://demo.avored.com/my-account">
-                My Account
-            </a>
-            </li>
-    <li class="nav-item">        
-    <a class="nav-link navbar2_class" href="{{url('cart')}}">
-                Cart <span class="badge badge-primary fill">0</span>
-            </a>      
-    </li>
-
-    <li class="nav-item">
-    <a class="nav-link navbar2_class" href="{{url('dashboard3')}}">
-                Checkout
-            </a>                
-    </li>
-
-    <li class="nav-item">
-    <a class="nav-link navbar2_class" href="{{url('laptop')}}">
-                Laptops
-            </a>
-    </li>
-
-    <li class="nav-item">        
-    <a class="nav-link navbar2_class" href="{{url('accessories')}}">
-                Accessories
-            </a>                
-    </li>
-    <li class="nav-item">        
-    <a class="nav-link navbar2_class" href="{{url('items')}}">
-                Others
-            </a>
-    </li>
+                    <li class="nav-item">        
+                             <a class="nav-link navbar2_class" href="https://demo.avored.com/my-account">My Account</a>
+                    </li>
+                    <li class="nav-item">        
+                             <a class="nav-link navbar2_class" href="{{url('cart')}}">Cart <span class="badge badge-primary fill">0</span> </a>      
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link navbar2_class" href="{{url('dashboard2')}}">Laptops</a>
+                    </li>
+                    <li class="nav-item">        
+                            <a class="nav-link navbar2_class" href="{{url('accessories')}}">Accessories</a>                
+                    </li>
+                    <li class="nav-item">        
+                            <a class="nav-link navbar2_class" href="{{url('items')}}">Others</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link navbar2_class" href="{{url('dashboard3')}}">Checkout</a>                
+                    </li>
             </ul>
         </div>
     </div>

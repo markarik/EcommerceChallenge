@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>
+            @yield('title','Markarik Technologies')
+        </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -16,12 +18,23 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/mine.css')}}">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="{{asset('dist/css/foundation.css')}}"/>
+        <link rel="stylesheet" href="{{asset('dist/css/app.css')}}"/>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
 
        
     </head>
     <body>
        @yield('content')
     </body>
+
+
+    <script src="{{asset('dist/js/vendor/jquery.js')}}"></script>
+    <script src="{{asset('dist/js/app.js')}}"></script>
+
+
     {{-- bootstrap sript --}}
     <script src="https://demo.avored.com/vendor/avored-default/js/app.js"></script>
 

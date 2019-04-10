@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
-
+}); */
+Route::get('/','UsersController@index');
 Route::get('/dashboard','UsersController@index');
 
 Route::get('/dashboard2','UsersController@index2');
@@ -25,3 +25,9 @@ Route::get('/cart','CartController@index');
 Route::get('/laptop','LaptopController@index');
 Route::get('/accessories','AccessoriesController@index');
 Route::get('/items','OthersController@index');
+
+
+Route::get('/detail','LaptopController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

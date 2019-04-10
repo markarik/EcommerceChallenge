@@ -34,6 +34,14 @@ body{
   background-position: center -30px; 
   background-size: cover;
 }
-.navbar2_class{
-  color: red !important;
+
+
+/* details navbar */
+.nav_detail{
+  background-color:rgba(0,0,0,0.2)!important;
+  margin-top: 25px;
+  color:blue !important;
 }
+ .nav_detail_align{
+  color:blue !important;
+} 

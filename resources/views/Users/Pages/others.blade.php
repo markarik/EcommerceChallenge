@@ -1,10 +1,10 @@
 @extends('layout.app')
 @section('content')
-<div class="container">
+
 <header>
     @include('assets.navbar')
 </header>
-
+<div class="container">
 <nav>
         @include('assets.navbar2')
 </nav>

@@ -13,7 +13,7 @@ class AccessoriesController extends Controller
      */
     public function index()
     {
-        return view('Users.Pages.accessories');
+        return view('Users.Pages.accessories.accessories');
     }
 
     /**

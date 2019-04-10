@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('content')
 <header>
-    @include('assets.navbar')
+   {{--  @include('assets.navbar') --}}
 </header>
 <div class="container">
 
