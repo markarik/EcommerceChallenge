@@ -19,7 +19,7 @@ Route::get('/dashboard','UsersController@index');
 
 Route::get('/dashboard2','UsersController@index2');
 
-Route::get('/dashboard3','UsersController@index3');
+Route::get('/checkout','UsersController@index3');
 
 Route::get('/cart','CartController@index');
 Route::get('/laptop','LaptopController@index');
@@ -30,4 +30,18 @@ Route::get('/items','OthersController@index');
 Route::get('/detail','LaptopController@index');
 Auth::routes();
 
+Route::get('/logout','Auth\LoginController@logout');
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
+
+    Route::get('/', function () {
+
+        return view('Users.admin.index');
+        
+    })->name('admin.index');
+
+});

@@ -23,7 +23,7 @@
                             <a class="nav-link navbar2_class" href="{{url('items')}}">Others</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link navbar2_class" href="{{url('dashboard3')}}">Checkout</a>                
+                            <a class="nav-link navbar2_class" href="{{url('checkout')}}">Checkout</a>                
                     </li>
             </ul>
         </div>

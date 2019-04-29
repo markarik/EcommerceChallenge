@@ -23,7 +23,7 @@ class UsersController extends Controller
 
     public function index3()
     {
-        return view ('Users.dashboard3');
+        return view ('Users.Pages.Checkout.checkoutboard');
     }
 
     /**

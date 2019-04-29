@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/admin.css')}}">
 </head>
 <body>
-@include('admin.layout.includes.header')
+@include('Users.admin.layout.includes.header')
 <div class="page-content">
     @if(Session::has('message'))
         <div class="alert alert-info">
@@ -16,7 +16,7 @@
     @endif
 
     <div class="row">
-        @include('admin.layout.includes.sidenav')
+        @include('Users.admin.layout.includes.sidenav')
         <div class="col-md-10 display-area">
             <div class="row text-center">
                 <div class="col-md-10 col-md-offset-1">

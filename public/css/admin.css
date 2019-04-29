@@ -340,7 +340,7 @@ footer .copy {
 }
 
 .sidebar .nav a .caret {
-    float: right;
+    /*float: right;*/
     width: 0;
     height: 0;
     display: inline-block;

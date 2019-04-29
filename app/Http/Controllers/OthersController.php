@@ -13,7 +13,7 @@ class OthersController extends Controller
      */
     public function index()
     {
-        return view('Users.Pages.others');
+        return view('Users.Pages.Others.others');
     }
 
     /**

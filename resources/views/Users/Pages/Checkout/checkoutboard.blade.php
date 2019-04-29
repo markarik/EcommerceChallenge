@@ -10,7 +10,7 @@
 </nav>
 
        
-@include('assets.checkout')
+ @include('Users.Pages.Checkout.checkoutcards')
 
 
     

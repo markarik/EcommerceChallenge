@@ -8,12 +8,8 @@
 <nav>
         @include('assets.navbar2')
 </nav>
-
        
-<h1>Accessories</h1>
-
-
-    
+    @include('Users.Pages.accessories.accessoriescards')    
 
    <footer>
        @include('assets.footer')

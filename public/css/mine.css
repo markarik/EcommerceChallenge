@@ -1,6 +1,6 @@
 body{
    
-   background-color: rgba(71,61,139,0.05);
+   background-color: red;
 }
 /* Carousel base class */
 .carousel {
@@ -45,3 +45,12 @@ body{
  .nav_detail_align{
   color:blue !important;
 } 
+
+
+
+/* navbar */
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}

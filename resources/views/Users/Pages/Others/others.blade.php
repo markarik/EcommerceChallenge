@@ -7,13 +7,9 @@
 <div class="container">
 <nav>
         @include('assets.navbar2')
-</nav>
+</nav>  
 
-       
-<h1>Anyother</h1>
-
-
-    
+    @include('Users.Pages.Others.otherscards')
 
    <footer>
        @include('assets.footer')
