@@ -34,6 +34,9 @@ Route::get('/logout','Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//product
+Route::get('/product','ProductsController@create');
+
 
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
@@ -43,5 +46,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
         return view('Users.admin.index');
         
     })->name('admin.index');
+
+    Route::resource('product', 'ProductsController');
 
 });
