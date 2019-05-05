@@ -12,7 +12,7 @@ class product extends Model
         'name','price','units','description','category_id','image'
     ]; */
 
-    protected $filliable = ['name','description','size','category_id','image'];
+    protected $filliable = array('name','description','size','category_id','image');
 
   /*   public function orders(){
         return $this->asMany(Order::class);
