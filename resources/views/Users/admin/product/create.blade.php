@@ -5,30 +5,41 @@
 
 <div class="row">
 
-    <div class="col-md-6 col-md-offset">    
-        {{ Form::open(['route' => 'product.create','method'=>'post','files'=>true]) }}
+    <div class="col-md-8 col-md-offset-2">  
+                {{-- {{ Form::open(['action'=>'ProductsController@store','enctype'=>'multipart/form-data','method'=>'POST','files'=>true]) }}
 
-            <div class="form-group">
-                {{form::label('name','Name')}}
-                {{form::text('name',null,array('class' =>'form-control'))}}
-            </div>
+                {{method_field('POST')}} --}}
+                {{ Form::open(['route'=>'product.store','enctype'=>'multipart/form-data','method'=>'POST','files'=>true]) }}
 
-            <div class="form-group">
-                    {{form::label('description','Description')}}
-                    {{form::text('description',null,array('class' =>'form-control'))}}
-            </div>
-
-            <div class="form-group">
-                    {{form::label('size','Size')}}
-                    {{form::select('size',['small'=>'Small','medium'=>'Medium','large'=>'Large'],null,array('class' =>'form-control'))}}
-            </div>
-
-            <div class="form-group">
-                    {{form::label('image','Image')}}
-                    {{form::file('image',null,array('class' =>'form-control'))}}
-            </div>
-        
-         {{ Form::close() }}
+                <div class="form-group">
+                    {{form::label('name','Name')}}
+                    {{form::text('name',null,array('class' =>'form-control'))}}
+                </div>
+    
+                <div class="form-group">
+                        {{form::label('description','Description')}}
+                        {{form::text('description',null,array('class' =>'form-control'))}}
+                </div>
+    
+                <div class="form-group">
+                        {{form::label('size','Size')}}
+                        {{form::select('size',['small'=>'Small','medium'=>'Medium','large'=>'Large'],null,array('class' =>'form-control'))}}
+                </div>
+                <div class="form-group">
+                        {{form::label('category_id','Category')}}
+                        {{form::select('category_id',$categories,null,array('class' =>'form-control','placeholder'=>'Select Category'))}}
+                </div>
+    
+                <div class="form-group">
+                        {{form::label('image','Image')}}
+                        {{form::file('image',null,array('class' =>'form-control'))}}
+                </div>
+    
+                {{form::submit('create',null,array('class' =>'btn btn-default'))}}
+                {{form::close()}}
+                
+        {{ Form::close() }}  
+       
     </div>
 </div>
     

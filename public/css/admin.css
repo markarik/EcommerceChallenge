@@ -678,3 +678,7 @@ body {
         border-radius: 10px;
     }
 }
+/*button*/
+.buton_class{
+    color: red !important;
+}

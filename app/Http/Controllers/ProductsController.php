@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 
-use App\Product;
+use App\product;
+use App\category;
 use Illuminate\Http\Request;
+
 
 class ProductsController extends Controller
 {
@@ -25,7 +27,8 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view('Users.admin.product.create');
+        $categories = category::pluck('name','id');
+        return view('Users.admin.product.create',compact('categories'));
     }
 
     /**
@@ -36,7 +39,20 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $formInput = $request->except('image');
+       
+        $image=$request->image;
+
+       // return 123;
+        if($image){
+            $imageName = $image->getClientOriginalName();
+            $image->move('images',$imageName);
+            $formInput['image']=$imageName;
+        }
+        Product::create($formInput);
+
+
+        return redirect()->route('admin.index'); 
     }
 
     /**
