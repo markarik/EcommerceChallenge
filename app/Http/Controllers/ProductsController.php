@@ -41,12 +41,12 @@ class ProductsController extends Controller
     {
        //image upload
       $formInput = $request -> except('image');
-       $image = $request -> image;
-
+       $image = $request ->image;
+ 
        if($image){
            $imageName = $image -> getClientOriginalName();
            $image -> move('Image',$imageName);
-           $formInput['image0']= $imageName;
+           $formInput['image']= $imageName;
        }
 
 
