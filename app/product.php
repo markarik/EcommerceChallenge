@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class product extends Model
 {
-   // use SoftDeletes;
+   //use SoftDeletes;
    /*  protected $guarded = [
         'name','price','units','description','category_id','image'
     ]; */
 
-    protected $guarded = array('name','description','size','category_id','image');
+    protected $guarded = ['name'];
+    /* ,'description','size','category_id','image' */
               
   /*   public function orders(){
         return $this->asMany(Order::class);

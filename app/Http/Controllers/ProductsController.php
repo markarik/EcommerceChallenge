@@ -40,17 +40,17 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
        //image upload
-      $formInput = $request -> except('image');
+      /* $formInput = $request -> except('image');
        $image = $request ->image;
  
        if($image){
            $imageName = $image -> getClientOriginalName();
            $image -> move('Image',$imageName);
            $formInput['image']= $imageName;
-       }
+       } */
 
 
-       product::create();
+       
 
        return redirect()-> route('admin.index');
 

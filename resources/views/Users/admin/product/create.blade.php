@@ -16,7 +16,7 @@
                     {{form::text('name',null,array('class' =>'form-control'))}}
                 </div>
     
-                <div class="form-group">
+             {{--    <div class="form-group">
                         {{form::label('description','Description')}}
                         {{form::text('description',null,array('class' =>'form-control'))}}
                 </div>
@@ -33,7 +33,7 @@
                 <div class="form-group">
                         {{form::label('image','Image')}}
                         {{form::file('image',null,array('class' =>'form-control'))}}
-                </div>
+                </div> --}}
     
                 {{form::submit('create',array('class' =>'btn btn-default'))}}
                
