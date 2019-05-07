@@ -15,8 +15,10 @@ class UsersController extends Controller
      */
     public function index()
     {
+        $products = product::all();
         
-        return view ('Users.dashboard');
+       
+        return view ('Users.dashboard')->with('products',$products);
     }
 
     public function index2()

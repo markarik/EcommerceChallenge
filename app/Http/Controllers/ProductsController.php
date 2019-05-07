@@ -81,7 +81,7 @@ class ProductsController extends Controller
            $product['image']= $imageName;
        }
        $product->save();
-       return redirect()-> route('admin.index') -> with('success','Post Created');
+       return redirect()-> route('product.create') -> with('success','Post Created');
     }
 
     /**
