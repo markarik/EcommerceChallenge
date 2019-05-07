@@ -12,7 +12,7 @@ class product extends Model
         'name','price','units','description','category_id','image'
     ]; */
 
-    protected $fillable= ['name','description','size','image'];
+    protected $fillable= ['name','description','size','price','image'];
     /* ,'description','size','category_id','image' */
               
   /*   public function orders(){

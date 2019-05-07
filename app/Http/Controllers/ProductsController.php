@@ -17,7 +17,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        $products = product::all();
+        return view('Users.admin.product.index')->with('products',$products);
     }
 
     /**
@@ -54,7 +55,8 @@ class ProductsController extends Controller
 
         'name' => 'required',
         'description' => 'required',
-        'image'=>'required|image|mimes:jpeg,png,jpg,gif'
+        'price' => 'required',
+        'image'=>'required|image|mimes:jpeg,png,jpg,gif|max:10000'
         
 
        ]);
@@ -65,6 +67,7 @@ class ProductsController extends Controller
        $product ->name=$request->input('name');
        $product ->description=$request->input('description');
        $product ->size=$request->input('size');
+       $product ->price=$request->input('price');
        $product ->category_id=$request->input('category_id');
 
 

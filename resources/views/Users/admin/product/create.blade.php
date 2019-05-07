@@ -26,6 +26,10 @@
                         {{form::select('size',['small'=>'Small','medium'=>'Medium','large'=>'Large'],null,array('class' =>'form-control'))}}
                 </div>
                 <div class="form-group">
+                                {{form::label('price','Price')}}
+                                {{form::text('price',null,array('class' =>'form-control'))}}
+                        </div>
+                <div class="form-group">
                         {{form::label('category_id','Category')}}
                         {{form::select('category_id',$categories,null,array('class' =>'form-control','placeholder'=>'Select Category'))}}
                 </div>

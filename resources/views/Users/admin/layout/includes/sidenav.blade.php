@@ -14,6 +14,9 @@
                 <ul>
                     <li><a href="{{route('product.create')}}">Add Product</a></li>
                 </ul>
+                <ul>
+                        <li><a href="{{route('product.index')}}">View Product</a></li>
+                    </ul>
             </li>
         </ul>
     </div>

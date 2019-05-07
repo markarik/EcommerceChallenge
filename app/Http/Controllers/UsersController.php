@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\product;
+use App\category;
 
 class UsersController extends Controller
 {
@@ -13,12 +15,16 @@ class UsersController extends Controller
      */
     public function index()
     {
+        
         return view ('Users.dashboard');
     }
 
     public function index2()
     {
-        return view ('Users.dashboard2');
+        
+        $products = product::all();
+        
+        return view ('Users.dashboard2')->with('products',$products);
     }
 
     public function index3()
