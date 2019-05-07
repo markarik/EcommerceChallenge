@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\product;
+use App\category;
 
 class CategoriesController extends Controller
 {
@@ -13,7 +15,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        //
+        $categories =category::all();
+        return view('Users.admin.category.categories')->with('categories',$categories);
     }
 
     /**
@@ -34,7 +37,8 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        category::create($request ->all());
+        return back();
     }
 
     /**
