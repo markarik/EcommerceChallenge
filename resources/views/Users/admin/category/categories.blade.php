@@ -6,13 +6,14 @@
 
 <div class="container">
 
-        <table id="users-table" class="table table-hover table-condensed" style="width:80%">  
+        <table id="users-table" class="table table-hover table-condensed" style="width:70%">  
           <thead>  
               <tr>  
                   <th>Id</th>                   
                   <th>Name</th>
-                  <th>Created</th>                  
-              </tr>  
+                  <th>Created</th> 
+                  <th></th> 
+                </tr>  
           </thead>
           <tbody>
               @if(count($categories)>1)
@@ -22,7 +23,7 @@
                     <td>{{$category->id}}</td>                    
                     <td>{{$category->name}}</td>
                     <td>{{$category->created_at}}</td>
-                    <td><a href="/posts/{{$category->id}}">View</a></td>                  
+                    <td><a href="/posts/{{$category->id}}">Delete</a></td>                  
                   </tr>         
                 @endforeach
               @else

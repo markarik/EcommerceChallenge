@@ -17,6 +17,16 @@
                 <ul>
                         <li><a href="{{route('product.index')}}">View Product</a></li>
                     </ul>
+                    <li class="submenu">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-list"></i> Category
+                                <span class="caret pull-right"></span>
+                            </a>
+                            <!-- Sub menu -->
+                            <ul>
+                                <li><a href="{{route('product.create')}}">Categories</a></li>
+                            </ul>
+                            
             </li>
         </ul>
     </div>
