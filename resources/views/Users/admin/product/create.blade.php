@@ -9,14 +9,14 @@
                 {{-- {{ Form::open(['action'=>'ProductsController@store','enctype'=>'multipart/form-data','method'=>'POST','files'=>true]) }}
 
                 {{method_field('POST')}} --}}
-                {{ Form::open(['route'=>'product.store','enctype'=>'multipart/form-data','method'=>'POST','files'=>true]) }}
+                {{ Form::open(['action'=>'ProductsController@store','enctype'=>'multipart/form-data','method'=>'POST','files'=>true]) }}
                 {!! csrf_field() !!}
                 <div class="form-group">
                     {{form::label('name','Name')}}
                     {{form::text('name',null,array('class' =>'form-control'))}}
                 </div>
     
-             {{--    <div class="form-group">
+              <div class="form-group">
                         {{form::label('description','Description')}}
                         {{form::text('description',null,array('class' =>'form-control'))}}
                 </div>
@@ -30,10 +30,10 @@
                         {{form::select('category_id',$categories,null,array('class' =>'form-control','placeholder'=>'Select Category'))}}
                 </div>
     
-                <div class="form-group">
+                 <div class="form-group">
                         {{form::label('image','Image')}}
                         {{form::file('image',null,array('class' =>'form-control'))}}
-                </div> --}}
+                </div>
     
                 {{form::submit('create',array('class' =>'btn btn-default'))}}
                

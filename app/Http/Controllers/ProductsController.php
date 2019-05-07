@@ -50,12 +50,35 @@ class ProductsController extends Controller
        } */
 
 
-       
+       $this->validate($request,[
 
-       return redirect()-> route('admin.index');
-
-       
+        'name' => 'required',
+        'description' => 'required',
+        'image'=>'required|image|mimes:jpeg,png,jpg,gif'
         
+
+       ]);
+
+     
+
+       $product = new product;
+       $product ->name=$request->input('name');
+       $product ->description=$request->input('description');
+       $product ->size=$request->input('size');
+       $product ->category_id=$request->input('category_id');
+
+
+
+       $product ->image= $request -> input('image');
+       $image = $request ->image;
+ 
+       if($image){
+           $imageName = $image -> getClientOriginalName();
+           $image -> move('Image',$imageName);
+           $product['image']= $imageName;
+       }
+       $product->save();
+       return redirect()-> route('admin.index') -> with('success','Post Created');
     }
 
     /**

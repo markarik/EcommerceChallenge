@@ -12,7 +12,7 @@ class product extends Model
         'name','price','units','description','category_id','image'
     ]; */
 
-    protected $guarded = ['name'];
+    protected $fillable= ['name','description','size','image'];
     /* ,'description','size','category_id','image' */
               
   /*   public function orders(){
@@ -21,7 +21,8 @@ class product extends Model
 
     public function categories()
     {
-        //return $this->belongsTo(category::class);
-        return $this->belongsTo('App\category');
+        return $this->belongsTo(category::class);
+        //$this->belongsTo('App\category');
+
     }
 }
