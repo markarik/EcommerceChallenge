@@ -16,7 +16,7 @@ class CategoriesController extends Controller
     public function index()
     {
         $categories =category::all();
-        return view('Users.admin.category.categories')->with('categories',$categories);
+        return view('Users.admin.category.categories',compact(['categories','products']));
     }
 
     /**
@@ -49,7 +49,9 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        //
+        $products = category::find($id);
+        $categories =category::all();
+        return view('Users.admin.category.categories',compact(['categories','products']));
     }
 
     /**

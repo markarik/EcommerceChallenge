@@ -4,7 +4,9 @@
 @section('content')
 
 
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Add Category
+   </button>
 
         <table id="users-table" class="table table-hover table-condensed" style="width:80%">  
           <thead>  
@@ -13,7 +15,7 @@
                   <th>Name</th>
                   <th>Created</th> 
                   <th></th> 
-                </tr>  
+                </tr>   
           </thead>
           <tbody>
               @if(count($categories)>1)
@@ -21,9 +23,9 @@
                 @foreach ($categories as $category)
                   <tr>
                     <td>{{$category->id}}</td>                    
-                    <td>{{$category->name}}</td>
+                  <td><a href="{{route('category.show',$category->id)}}">{{$category->name}}</a></td> 
                     <td>{{$category->created_at}}</td>
-                    <td><a href="/posts/{{$category->id}}">Delete</a></td>                  
+                    <td><a href="/admin/category{{$category->id}}">Delete</a></td>                  
                   </tr>         
                 @endforeach
               @else
@@ -33,10 +35,45 @@
       
         </table>
     
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Add Category
-               </button>
-      
+
+
+
+        {{-- products --}}
+        
+        @if(!empty($products))
+        <section>
+          <h3>Products</h3>
+
+          <table id="users-table" class="table table-hover table-condensed" style="width:80%">  
+              <thead>  
+                  <tr>  
+                      <th>Id</th>                   
+                      <th>Name</th>
+                      <th>Created</th> 
+                     
+                    </tr>  
+              </thead>
+              <tbody>
+                 @forelse ( $products  as $product)
+                 <tr>
+                    <td>{{ $products ->id}}</td>   
+                    <td>{{ $products ->name}}</td>  
+                    <td>{{ $products ->created_at}}</td>                   
+                                  
+                  </tr>
+                 @empty
+                 <tr>
+                    <td>No Data</td>                    
+                                     
+                  </tr>
+                 @endforelse
+              </tbody>
+          
+            </table>
+
+        </section>
+          
+      @endif
           
 @endsection
 

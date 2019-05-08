@@ -21,7 +21,7 @@
                   <td>{{$product->name}}</td>
                   <td>{{$product->created_at}}</td>
                   <td>{{$product->updated_at}}</td>
-                  <td><a href="/posts/{{$product->id}}">Delete</a></td>                  
+                  <td><a href="/admin/product/{{$product->id}}">Delete</a></td>                  
                 </tr>         
               @endforeach
             @else
