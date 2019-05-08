@@ -24,7 +24,7 @@
                             </a>
                             <!-- Sub menu -->
                             <ul>
-                                <li><a href="{{route('product.create')}}">Categories</a></li>
+                                <li><a href="{{route('category.index')}}">Categories</a></li>
                             </ul>
                             
             </li>

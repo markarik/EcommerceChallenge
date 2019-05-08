@@ -39,15 +39,7 @@
       
       </div>        
 @endsection
-@section('js')
 
-        <script>
-                $(document).ready( function () {
-                 $('#users-table').DataTable();
-                } );
-        </script>
-    
-@endsection
 
 
  {{-- modal --}}
