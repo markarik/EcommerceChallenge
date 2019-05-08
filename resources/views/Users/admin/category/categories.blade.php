@@ -4,9 +4,9 @@
 @section('content')
 
 
-<div class="container">
 
-        <table id="users-table" class="table table-hover table-condensed" style="width:70%">  
+
+        <table id="users-table" class="table table-hover table-condensed" style="width:80%">  
           <thead>  
               <tr>  
                   <th>Id</th>                   
@@ -37,7 +37,17 @@
                 Add Category
                </button>
       
-      </div>        
+          
+@endsection
+
+@section('js')
+
+        <script>
+                $(document).ready( function () {
+                 $('#users-table').DataTable();
+                } );
+        </script>
+    
 @endsection
 
 
