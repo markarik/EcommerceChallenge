@@ -25,13 +25,24 @@
                             <tr>
                                
                             <td>{{$row->name}}</td>
-                            <td>{{$row->qty}}</td>
+                            <td width="70px">
+                            
+                                    {{ Form::open(['route'=>['cart.update',$row->rowId],'enctype'=>'multipart/form-data','method'=>'PUT']) }}
+                                      <input type="number" name="qty" value="{{$row->qty}}"/>
+                                      <input type="submit" class="btn btn-sm btn-default" value="Ok"/>
+                                    {{ Form::close() }} 
+                            
+                            </td>
                             <td>{{$row->price}}</td>
                             <td>{{$row->options->has('size') ? $row->options->size : ''}}</td>                               
                             </tr>
              
                         @endforeach
-             
+                            <tr>
+                                <td></td>
+                                <td>{{Cart::count()}}</td> 
+                                <td>{{Cart::total()}}</td> 
+                            </tr>
                     </tbody>
                     
                  
