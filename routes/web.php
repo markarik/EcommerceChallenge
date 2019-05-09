@@ -51,3 +51,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
     Route::resource('category', 'CategoriesController');
 
 });
+
+
+/* cart route */
+Route::resource('cart', 'CartController');
