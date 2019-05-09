@@ -25,8 +25,8 @@
                             <tr>
                                
                             <td>{{$row->name}}</td>
-                            <td>{{$row->Qty}}</td>
-                            <td>{{$row->Price}}</td>
+                            <td>{{$row->qty}}</td>
+                            <td>{{$row->price}}</td>
                             <td>{{$row->options->has('size') ? $row->options->size : ''}}</td>                               
                             </tr>
              
@@ -38,5 +38,6 @@
              </table>
 
     </div>
+    
    
 @endsection

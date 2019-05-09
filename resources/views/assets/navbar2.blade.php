@@ -11,7 +11,9 @@
                              <a class="nav-link navbar2_class" href="https://demo.avored.com/my-account">My Account</a>
                     </li>
                     <li class="nav-item">       
-                             <a class="nav-link navbar2_class" href="{{route('cart.index')}}">Cart <span class="badge badge-primary fill">0</span> </a>      
+                             <a class="nav-link navbar2_class" href="{{route('cart.index')}}">Cart <span class="badge badge-primary fill">
+                                     {{Cart::count()}}
+                                </span> </a>      
                     </li>
                     <li class="nav-item">
                             <a class="nav-link navbar2_class" href="{{url('dashboard2')}}">Laptops</a>
