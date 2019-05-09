@@ -4,7 +4,7 @@
            
         <div class="item-wrapper">
             <div class="img-wrapper">
-                <a class="button expanded add-to-cart">Add to Cart</a>
+            <a href="{{route('cart.edit', $product->id)}}" class="button expanded add-to-cart">Add to Cart</a>
             <a href="#"><img src="{{url('Image',$product->image)}}"/></a>
             </div>
             <h5>
