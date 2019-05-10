@@ -1,5 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light mt-0" >
-    <div class="container">
+<div class="container margin_top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light " >
+   
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#avored-navbar">
             <span class="navbar-toggler-icon"></span>
@@ -29,6 +30,6 @@
                     </li>
             </ul>
         </div>
-    </div>
+  
 </nav>
-
+</div>

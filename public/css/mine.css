@@ -5,6 +5,10 @@ body{
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
+    
+  }
+  .couresel_align{
+    margin-top: 4rem !important;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -81,3 +85,10 @@ body{
 .list_class li a:hover {
   background-color: #111111;
 }
+
+.margin_top{
+  margin-top: 5rem;
+  
+}
+
+

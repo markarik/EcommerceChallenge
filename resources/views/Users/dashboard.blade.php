@@ -8,15 +8,15 @@
 
             </header>
 
-            <div class="container">
+            <div class="container couresel_align">
 
-                        @include('assets.couresels') 
+                    @include('assets.couresels') 
 
-                    <footer>
+                <footer>
 
-                        @include('assets.footer')
+                    @include('assets.footer')
 
-                    </footer>
+                </footer>
 
             </div>
 @endsection
