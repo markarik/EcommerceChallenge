@@ -1,6 +1,6 @@
 
 
-  <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark nav_position">
     <a class="py-2" href="{{url('dashboard')}}">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
     </a>
@@ -13,10 +13,31 @@
           <a class="nav-link" href="{{url('dashboard')}}">Home</a>
         </li>       
       </ul>
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+   
+<ul class="list_class">
+      <li class="nav-item">       
+          <a class="nav-link navbar2_class" href="{{route('cart.index')}}">Cart <span class="badge badge-primary fill">
+                  {{Cart::count()}}
+             </span> </a>      
+      </li>
+
+      <li class="nav-item">
+              <a class="nav-link navbar2_class" href="#">Goals</a>
+      </li>
+
+      <li class="nav-item">        
+              <a class="nav-link navbar2_class" href="{#">About</a>                
+      </li>
+
+      <li class="nav-item">        
+              <a class="nav-link navbar2_class" href="#">Contucts</a>
+      </li>
+
+      <li class="nav-item">
+              <a class="nav-link navbar2_class" href="#">Achievements</a>                
+      </li>
+    </ul>
+     
     </div>
   </nav>
 
