@@ -5,7 +5,8 @@
 <table id="users-table" class="table table-hover table-condensed" style="width:80%">  
         <thead>  
             <tr>  
-                <th>Id</th>                   
+                <th>Id</th> 
+                <th>Category</th>                  
                 <th>Name</th>
                 <th>Created</th> 
                 <th>Updated</th>
@@ -17,7 +18,8 @@
   
               @foreach ($products as $product)
                 <tr>
-                  <td>{{$product->id}}</td>                    
+                  <td>{{$product->id}}</td>       
+                  <td>{{(($product->categories)>0)?$product->category->name:"N/A"}}</td>           
                   <td>{{$product->name}}</td>
                   <td>{{$product->created_at}}</td>
                   <td>{{$product->updated_at}}</td>
