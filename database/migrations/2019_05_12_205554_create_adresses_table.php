@@ -13,9 +13,9 @@ class CreateAdressesTable extends Migration
      */
     public function up()
     {
-       
-        Schema::create('addresses', function (Blueprint $table) {
+        Schema::create('adresses', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('addressline');
             $table->string('city');
             $table->string('state');
@@ -24,7 +24,6 @@ class CreateAdressesTable extends Migration
             $table->string('phone');
             $table->timestamps();
 });
-
     }
 
     /**
