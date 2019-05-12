@@ -13,7 +13,7 @@ class AdressesController extends Controller
      */
     public function index()
     {
-        //
+        return view('Users.Pages.Checkout.shipping-info');
     }
 
     /**

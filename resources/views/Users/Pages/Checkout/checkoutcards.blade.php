@@ -1,5 +1,4 @@
-@extends('layout.app')
-@section('content')
+
    <div class="row">
        <div class="small-6 small-centered columns">
        <form action="{{route('payment.store')}}" method="POST" id="payment-form">
@@ -30,5 +29,5 @@
         </form>
         </div>
     </div>
- @endsection
+
  

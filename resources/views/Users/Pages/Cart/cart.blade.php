@@ -70,7 +70,7 @@
                     </tbody>
                 </table>
         
-                <a href="{{url('checkout')}} " class="button">Checkout</a>
+                <a href="{{url('address')}} " class="button">Checkout</a>
         </div>
    
 @endsection
