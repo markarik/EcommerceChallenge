@@ -38,6 +38,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/product','ProductsController@create');
 
 
+Route::post('/addressstore','AdressesController@store')->name('adress.store');
+
+
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
