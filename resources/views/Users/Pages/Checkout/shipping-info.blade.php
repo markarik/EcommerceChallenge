@@ -7,7 +7,7 @@
        <h3>Shipping Info</h3>
       
        {{ Form::open(['action'=>'AdressesController@store','enctype'=>'multipart/form-data','method'=>'POST','files'=>true]) }}
-       {!! csrf_field() !!}
+       {{ csrf_field() }}
 
        <div class="form-group">
 
@@ -37,8 +37,10 @@
            {{ Form::label('phone', 'Phone') }}
            {{ Form::text('phone', null, array('class' => 'form-control')) }}
        </div>
-       {{ Form::submit('Proceed to Payment', array('class' => 'button success')) }}
-       {!! Form::close() !!}
+       {{-- {{ Form::submit('Proceed to Payment', array('class' => 'button success')) }} --}}
+
+       {{form::submit('create',array('class' =>'btn btn-default'))}}
+      {{--  {!! Form::close() !!} --}}
        </div>
 </div>
 @endsection
