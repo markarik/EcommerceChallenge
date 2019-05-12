@@ -52,6 +52,14 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
 });
 
+Route::resource('address', 'AdressesController');
+
 
 /* cart route */
 Route::resource('cart', 'CartController');
+
+/* payment route */
+
+Route::post('store-payment','UsersController@store')->name('payment.store');
+
+

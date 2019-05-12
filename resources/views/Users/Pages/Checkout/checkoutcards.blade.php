@@ -1,119 +1,34 @@
-<div class="row">
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">Add to Cart</a>
-                <a href="#"><img src="/images/1.jpg"/></a>
+@extends('layout.app')
+@section('content')
+   <div class="row">
+       <div class="small-6 small-centered columns">
+       <form action="{{route('payment.store')}}" method="POST" id="payment-form">
+           {{csrf_field()}}
+           <span class="payment-errors"></span>
+           <div class="form-row">
+               <label>
+                   <span>Card Number</span>
+                   <input type="text" size="20" data-stripe="number">
+                </label>
+            </div> 
+            <div class="form-row">
+                <label>
+                    <span>Expiration (MM/YY)</span>
+                    <input type="text" size="2" data-stripe="exp_month">
+                    <span> / </span>
+                    <input type="text" size="2" data-stripe="exp_year">
+                </label>
             </div>
-            <h5>$19.99</h5>
-            <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
+ 
+            <div class="form-row">
+                <label>
+                    <span>CVC</span>
+                    <input type="text" size="4" data-stripe="cvc">
+                </label>
+            </div> 
+            <input type="submit" class="submit button success" value="Submit Payment">
+        </form>
         </div>
-    </div>   
-    <div class="small-3 columns">
-      <div class="item-wrapper">
-          <div class="img-wrapper">
-              <a class="button expanded add-to-cart">Add to Cart</a>
-              <a href="#"><img src="/images/1.jpg"/></a>
-          </div>
-          <h5>$19.99</h5>
-          <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-          </p>
-      </div>
-  </div>  
-  <div class="small-3 columns">
-    <div class="item-wrapper">
-        <div class="img-wrapper">
-            <a class="button expanded add-to-cart">Add to Cart</a>
-            <a href="#"><img src="/images/1.jpg"/></a>
-        </div>
-        <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-        <h5>$19.99</h5>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-        </p>
     </div>
-</div>  
-<div class="small-3 columns">
-  <div class="item-wrapper">
-      <div class="img-wrapper">
-          <a class="button expanded add-to-cart">Add to Cart</a>
-          <a href="#"><img src="/images/1.jpg"/></a>
-      </div>
-      <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-      <h5>$19.99</h5>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-      </p>
-  </div>
-</div>  
-<div class="small-3 columns">
-  <div class="item-wrapper">
-      <div class="img-wrapper">
-          <a class="button expanded add-to-cart">Add to Cart</a>
-          <a href="#"><img src="/images/1.jpg"/></a>
-      </div>
-      <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-      <h5>$19.99</h5>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-      </p>
-  </div>
-</div>  
-<div class="small-3 columns">
-  <div class="item-wrapper">
-      <div class="img-wrapper">
-          <a class="button expanded add-to-cart">Add to Cart</a>
-          <a href="#"><img src="/images/1.jpg"/></a>
-      </div>
-      <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-      <h5>$19.99</h5>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-      </p>
-  </div>
-</div>  
-<div class="small-3 columns">
-  <div class="item-wrapper">
-      <div class="img-wrapper">
-          <a class="button expanded add-to-cart">Add to Cart</a>
-          <a href="#"><img src="/images/1.jpg"/></a>
-      </div>
-      <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-      <h5>$19.99</h5>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-      </p>
-  </div>
-</div>  
-<div class="small-3 columns">
-  <div class="item-wrapper">
-      <div class="img-wrapper">
-          <a class="button expanded add-to-cart">Add to Cart</a>
-          <a href="#"><img src="/images/1.jpg"/></a>
-      </div>
-      <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-      <h5>$19.99</h5>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-      </p>
-  </div>
-</div>  
-<div class="small-3 columns">
-  <div class="item-wrapper">
-      <div class="img-wrapper">
-          <a class="button expanded add-to-cart">Add to Cart</a>
-          <a href="#"><img src="/images/1.jpg"/></a>
-      </div>
-      <a href="#"><h3>Kickin with Kraken Tee</h3></a>
-      <h5>$19.99</h5>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-      </p>
-  </div>
-</div>  
-</div> ,
+ @endsection
+ 
