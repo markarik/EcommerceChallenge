@@ -38,7 +38,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/product','ProductsController@create');
 
 
-Route::post('/addressstore','AdressesController@store')->name('adress.store');
+Route::post('/addresstore','AdressesController@store')->name('adress.store');
 
 
 
