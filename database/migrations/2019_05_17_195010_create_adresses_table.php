@@ -21,10 +21,13 @@ class CreateAdressesTable extends Migration
             $table->string('state');
             $table->integer('zip');
             $table->string('country');
-            $table->string('phone');
+            $table->integer('phone');
             $table->timestamps();
-});
+        });
     }
+
+
+
 
     /**
      * Reverse the migrations.
